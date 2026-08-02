@@ -1,0 +1,41 @@
+generated: '2026-08-01'
+method: searched
+source: >-
+  npm, PyPI and the boughtbymany GitHub organization (https://github.com/boughtbymany)
+note: >-
+  ManyPets publishes NO client SDK for any ManyPets API — the partner API is gated
+  and undocumented, so there is nothing for a client library to wrap. Searched npm
+  ("manypets", "@manypets/sdk", "boughtbymany"), PyPI ("manypets", "boughtbymany"),
+  and the first-party GitHub org: all 404 for a client library. The org does publish
+  one first-party open-source developer tool (below), but it is internal engineering
+  tooling, not an API client — so apis.yml carries a `Packages` pointer and
+  deliberately does NOT carry an `SDKs` pointer.
+sdk_count: 0
+packages:
+- language: python
+  registry: pypi
+  name: banquet
+  version: 0.0.1
+  url: https://pypi.org/project/banquet/
+  repository: https://github.com/boughtbymany/banquet
+  install: pip install banquet
+  official: true
+  client_library: false
+  description: CLI tool / development server for working with OpenAPI and AWS Lambda projects
+registries_searched:
+- {registry: npm, queries: [manypets, '@manypets/sdk', boughtbymany], hits: 0}
+- {registry: pypi, queries: [manypets, boughtbymany], hits: 0}
+- {registry: github, org: boughtbymany, public_repos: 26, first_party_libraries: 1}
+other_first_party_open_source:
+- name: django-barrier-field
+  url: https://github.com/boughtbymany/django-barrier-field
+  description: Django authentication backend that uses AWS Cognito
+  registry: none
+- name: github-auth0-allow-origins-action
+  url: https://github.com/boughtbymany/github-auth0-allow-origins-action
+  description: GitHub Action adding deploy-preview URLs to an Auth0 origin allow list
+  registry: none
+- name: tap-purecloud
+  url: https://github.com/boughtbymany/tap-purecloud
+  description: Singer tap for Genesys PureCloud
+  registry: none

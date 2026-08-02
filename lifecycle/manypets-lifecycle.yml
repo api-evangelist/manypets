@@ -1,0 +1,44 @@
+generated: '2026-08-01'
+method: searched
+source: https://manypets.com/us/blog/manypets-is-transitioning-to-odie/
+note: >-
+  ManyPets publishes no API versioning policy, no deprecation policy, no Sunset /
+  Deprecation header contract, no SLA and no status page — every probe below missed.
+  No StatusPage or Deprecation pointer is wired in apis.yml as a result. What IS
+  documented is a market/product lifecycle event: the ManyPets US book is
+  transitioning to Odie.
+api_versioning: null
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla: null
+status_page: null
+deprecated_operations: []
+probes:
+- {url: 'https://status.manypets.com/', status: 'no-dns'}
+- {url: 'https://manypets.com/uk/status/', status: 404}
+- {url: 'https://manypets.com/uk/security/', status: 404}
+product_lifecycle:
+- market: United States
+  event: transition
+  summary: >-
+    ManyPets is transitioning its United States pet insurance business to Odie;
+    ManyPets publishes a transition announcement and an Odie FAQ for US customers.
+  links:
+  - https://manypets.com/us/blog/manypets-is-transitioning-to-odie/
+  - https://manypets.com/us/odie-faqs/
+  observed: '2026-08-01'
+- market: United Kingdom
+  event: active
+  summary: >-
+    UK pet insurance (dog, cat, multi-pet, preventative flea/tick/worm plan) remains
+    the active core business, sold at manypets.com/uk/.
+  links:
+  - https://manypets.com/uk/
+  observed: '2026-08-01'
+- market: brand
+  event: rename
+  summary: Bought By Many rebranded to ManyPets; boughtbymany.com now 301s to manypets.com/uk/.
+  links:
+  - https://manypets.com/uk/brand/
+  observed: '2026-08-01'

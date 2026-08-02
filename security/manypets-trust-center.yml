@@ -1,0 +1,54 @@
+generated: '2026-08-01'
+method: searched
+probe: true
+source: https://trust.manypets.com/
+url: https://trust.manypets.com/
+platform: SafeBase
+name: ManyPets Trust & Security (Security Portal)
+access: >-
+  Overview, compliance badges and control families are public. Sensitive documents
+  (ISO 27001 certificate/SoA, PCI DSS AoC, penetration-test reports) require a
+  SafeBase access request via "Start your security review".
+certifications:
+- Cyber Essentials
+- ISO/IEC 27001
+- ISO/IEC 27001 SoA
+- PCI DSS v4.0.0
+- CSA STAR
+- GDPR
+control_families:
+- family: Product Security
+  controls: [Audit Logging, Multi-Factor Authentication, Role-Based Access Control]
+- family: Data Security
+  controls: [Access Monitoring, Data Backups, Data Erasure]
+- family: App Security
+  controls: [Responsible Disclosure, Application Penetration Testing, Vulnerability & Patch Management]
+- family: Legal
+  controls: [Cyber Insurance, Privacy Policy, Terms of Service]
+- family: Data Privacy
+  controls: [Cookies, Data Breach Notifications, Data Privacy Officer]
+- family: Access Control
+  controls: [Data Access Logging, Password Security]
+- family: Infrastructure
+  controls: [Amazon Web Services, Anti-DDoS, BC/DR]
+- family: Endpoint Security
+  controls: [Disk Encryption, Endpoint Detection & Response, Threat Detection]
+- family: Network Security
+  controls: [Data Loss Prevention, Firewall, IDS/IPS]
+- family: Corporate Security
+  controls: [Asset Management Practices, Email Protection, Employee Training]
+evidence:
+- source: https://trust.manypets.com/
+  keywords:
+  - cyber essentials
+  - iso/iec 27001
+  - pci dss v4.0.0
+  - csa star
+  - gdpr
+  - trust centre
+  - responsible disclosure
+x-evidence:
+  fetched: '2026-08-01'
+  url: https://trust.manypets.com/
+  http_status: 200
+  content_type: text/html; charset=utf-8

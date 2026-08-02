@@ -1,17 +1,34 @@
 aid: manypets
 name: ManyPets
-description: 'ManyPets is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'ManyPets (formerly Bought By Many, part of ManyGroup) is a digital-first
+  pet insurance provider founded in 2012 by Steven Mendel and Guy Farley and headquartered
+  in London, United Kingdom. The company sells lifetime dog, cat and multi-pet insurance
+  direct to consumers in the UK, alongside a preventative flea/tick/worm plan, an
+  online claims experience and unlimited 24/7 video vet consultations. Sister ManyGroup
+  brands include ExoticDirect (exotic pet insurance) and VetBox (pet treatment subscriptions).
+  ManyPets raised a $350M Series D led by EQT Growth in 2021 and has also operated
+  in the United States and Sweden; the US book is transitioning to Odie. ManyPets
+  does not publish a public developer portal or machine-readable API contract — its
+  API is offered only through a gated partner programme (affiliate, widget, API partner,
+  perk and custom solutions) operated at many-group.com/partners/.'
 url: https://raw.githubusercontent.com/api-evangelist/manypets/refs/heads/main/apis.yml
+image: https://manypets.com/uk/images/og.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
+x-tier: profiled
 x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-01'
 modified: '2026-08-01'
 tags:
 - Company
+- Insurance
+- InsurTech
+- Pet Insurance
+- Pet Care
+- Financial Services
+- Consumer
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,56 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/manypets-trust-center.yml
+- type: DomainSecurity
+  url: security/manypets-domain-security.yml
 - type: Website
+  url: https://manypets.com/uk/
+- type: Company
+  url: https://many-group.com/
+- type: About
+  url: https://manypets.com/uk/about/
+- type: Support
+  url: https://manypets.com/uk/help/
+- type: Contact
+  url: https://manypets.com/uk/contact-us/
+- type: Blog
+  url: https://manypets.com/uk/articles/
+- type: Press
+  url: https://manypets.com/uk/press-office/
+- type: Careers
+  url: https://many-group.com/careers/opportunities/
+- type: Partners
+  url: https://many-group.com/partners/
+- type: GitHubOrganization
+  url: https://github.com/boughtbymany
+- type: SignUp
+  url: https://manypets.com/uk/quotes/uk-pio/
+- type: Login
+  url: https://manypets.com/uk/account/
+- type: TermsOfService
+  url: https://manypets.com/uk/terms/
+- type: PrivacyPolicy
+  url: https://manypets.com/uk/privacy/
+- type: Accessibility
+  url: https://manypets.com/uk/accessibility-statement/
+- type: SecondaryMarket
   url: https://forgeglobal.com/manypets_stock/
+- type: Compliance
+  url: https://trust.manypets.com/
+- type: Conformance
+  url: conformance/manypets-conformance.yml
+- type: VulnerabilityDisclosure
+  url: security/manypets-vulnerability-disclosure.yml
+- type: Packages
+  url: packages/manypets-packages.yml
+- type: Lifecycle
+  url: lifecycle/manypets-lifecycle.yml
+- type: LLMsTxt
+  url: llms/manypets-llms.txt
+x-enrichment:
+  date: '2026-08-01'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

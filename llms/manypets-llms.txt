@@ -1,0 +1,81 @@
+# ManyPets
+
+> ManyPets (formerly Bought By Many, part of ManyGroup) is a London-headquartered,
+> digital-first pet insurance provider founded in 2012. It sells lifetime dog, cat
+> and multi-pet insurance direct to consumers in the United Kingdom, plus a
+> preventative flea/tick/worm plan, online claims and 24/7 video vet consultations.
+> ManyPets publishes NO public developer portal, NO public API documentation and NO
+> machine-readable API contract (no OpenAPI, GraphQL, AsyncAPI, MCP server or A2A
+> agent card were found on any ManyPets or ManyGroup host as of 2026-08-01). An API
+> integration path exists, but only through a gated partner programme that starts
+> with a contact form.
+
+## Company
+
+- [ManyPets (UK)](https://manypets.com/uk/): Consumer site — quotes, policies, claims, help.
+- [ManyPets (US)](https://manypets.com/us/): US site; the US book is transitioning to Odie.
+- [ManyGroup](https://many-group.com/): Parent group — ManyPets, ExoticDirect, VetBox.
+- [About ManyPets](https://manypets.com/uk/about/): Company background and mission.
+- [Press office](https://manypets.com/uk/press-office/): Media releases and contacts.
+- [Brand history](https://manypets.com/uk/brand/): The Bought By Many → ManyPets rename.
+
+## Integration and partnering (no public API docs)
+
+- [Become a partner](https://many-group.com/partners/): The only published route to a
+  ManyPets API. Five partner types — Affiliate, Widget Partner, **API Partner**
+  ("Integrate with our API to create a seamless journey for customers to access our
+  insurance"), Perk, and Custom Solutions. Onboarding is a contact form; ManyPets
+  responds within three working days. No specification, endpoint, sandbox,
+  authentication model or rate limit is published.
+- [GitHub organization](https://github.com/boughtbymany): First-party engineering org
+  (26 public repositories, mostly forks plus internal tooling). No API client SDK.
+- [banquet on PyPI](https://pypi.org/project/banquet/): First-party open-source CLI /
+  dev server for OpenAPI + AWS Lambda projects. Engineering tooling, not a client SDK.
+
+## Products
+
+- [Dog insurance](https://manypets.com/uk/pet-insurance/dog-insurance/)
+- [Cat insurance](https://manypets.com/uk/pet-insurance/cat-insurance/)
+- [Multi-pet insurance](https://manypets.com/uk/pet-insurance/multi-pet-insurance/)
+- [Preventative flea, tick and worm plan](https://manypets.com/uk/fla-tick-worm-plan/)
+- [ExoticDirect](https://exoticdirect.co.uk/): Sister brand, exotic pet insurance.
+
+## Customer surfaces
+
+- [Get a quote](https://manypets.com/uk/quotes/uk-pio/)
+- [My account (login)](https://manypets.com/uk/account/)
+- [How to claim](https://manypets.com/uk/how-to-claim/)
+- [Help centre](https://manypets.com/uk/help/)
+- [Contact us](https://manypets.com/uk/contact-us/)
+- [Vet portal](https://manypets.com/uk/vets/)
+- [Articles / blog](https://manypets.com/uk/articles/)
+
+## Security, trust and compliance
+
+- [Trust centre](https://trust.manypets.com/): SafeBase-hosted security portal.
+  Publicly listed compliance: Cyber Essentials, ISO/IEC 27001 (plus SoA), PCI DSS
+  v4.0.0, CSA STAR, GDPR. Documents require an access request.
+- Responsible Disclosure is listed as a control on the trust centre, but no public
+  disclosure policy URL, security contact or `/.well-known/security.txt` exists —
+  every `/.well-known/` probe returned 404.
+- Domain security (probed 2026-08-01): TLS 1.3, HSTS with a 31536000 max-age, SPF
+  present, DMARC present with `p=reject`; no DNSSEC and no CAA records.
+
+## Legal
+
+- [Terms](https://manypets.com/uk/terms/)
+- [Privacy policy](https://manypets.com/uk/privacy/)
+- [Handbooks and IPIDs](https://manypets.com/uk/handbooks-ipid/)
+- [Accessibility statement](https://manypets.com/uk/accessibility-statement/)
+- [Modern Slavery Act statement](https://manypets.com/uk/modern-slavery/)
+
+## API Evangelist artifacts in this repo
+
+- `apis.yml` — the APIs.json index for ManyPets.
+- `conformance/manypets-conformance.yml` — published compliance and UK regulatory posture.
+- `security/manypets-trust-center.yml` — the trust centre, certifications and control families.
+- `security/manypets-vulnerability-disclosure.yml` — declared-but-unpublished disclosure programme.
+- `security/manypets-domain-security.yml` — probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC.
+- `packages/manypets-packages.yml` — registry search results (zero client SDKs).
+- `lifecycle/manypets-lifecycle.yml` — product/market lifecycle, including the US → Odie transition.
+- `well-known/manypets-well-known.yml` — the full `/.well-known/` probe record (zero hits).
