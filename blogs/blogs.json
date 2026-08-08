@@ -1,0 +1,14 @@
+{
+  "repo": "manypets",
+  "feeds": [
+    {
+      "source": "https://manypets.com/uk/contact-us/",
+      "feed_url": "https://manypets.com/uk/contact-us/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-06T14:08:46Z"
+}
