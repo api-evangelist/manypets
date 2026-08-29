@@ -12,6 +12,17 @@ description: 'ManyPets (formerly Bought By Many, part of ManyGroup) is a digital
   API is offered only through a gated partner programme (affiliate, widget, API partner,
   perk and custom solutions) operated at many-group.com/partners/.'
 url: https://raw.githubusercontent.com/api-evangelist/manypets/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://manypets.com/uk/images/og.png
 x-type: company
 x-source: harvest:secondary-market
