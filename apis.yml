@@ -49,7 +49,7 @@ tags:
 - Insurtech
 - Pet Insurance
 - Pet Care
-- Financial-Services
+- Financial Services
 - Consumer
 - United Kingdom
 tags_raw:
@@ -61,6 +61,7 @@ tags_raw:
 - Financial Services
 - Consumer
 - United Kingdom
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
