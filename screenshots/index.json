@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "manypets",
+    "captured_at": "2026-10-11T191601",
+    "source_url": "https://manypets.com/uk/",
+    "source_type": "Website",
+    "file": "manypets-2026-10-11T191601.png",
+    "bytes": 93068,
+    "capture": "playwright-local"
+  }
+]
