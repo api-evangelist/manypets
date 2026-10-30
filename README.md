@@ -64,42 +64,88 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ManyPets (formerly Bought By Many, part of ManyGroup) is a London-headquartered,
-digital-first pet insurance provider founded in 2012. It sells lifetime dog, cat and
-multi-pet insurance direct to consumers in the UK, alongside a preventative
-flea/tick/worm plan, online claims and 24/7 video vet consultations. Sister ManyGroup
-brands include ExoticDirect and VetBox. The US book is transitioning to Odie.
+ManyPets (formerly Bought By Many, part of ManyGroup) is a digital-first pet insurance provider founded in 2012 by Steven Mendel and Guy Farley and headquartered in London, United Kingdom. The company sells lifetime dog, cat and multi-pet insurance direct to consumers in the UK, alongside a preventative flea/tick/worm plan, an online claims experience and unlimited 24/7 video vet consultations. Sister ManyGroup brands include ExoticDirect (exotic pet insurance) and VetBox (pet treatment subscriptions). ManyPets raised a $350M Series D led by EQT Growth in 2021 and has also operated in the United States and Sweden; the US book is transitioning to Odie. ManyPets does not publish a public developer portal or machine-readable API contract — its API is offered only through a gated partner programme (affiliate, widget, API partner, perk and custom solutions) operated at many-group.com/partners/.
 
-- Website: https://manypets.com/uk/
-- Group: https://many-group.com/
-- Partner programme (the only published API route): https://many-group.com/partners/
-- GitHub: https://github.com/boughtbymany
-- Trust centre: https://trust.manypets.com/
+**Areas:** Company · Insurance · Insurtech · Pet Insurance · Pet Care · Financial Services · Consumer · United Kingdom
 
-## API surface
+## ManyPets on APIs.io
 
-**No public machine-readable API contract.** As of 2026-08-01, probes across
-`manypets.com`, `www.manypets.com`, `many-group.com`, `trust.manypets.com` and
-`exoticdirect.co.uk` found no OpenAPI/Swagger, no GraphQL endpoint, no AsyncAPI, no
-MCP server, no A2A agent card and no `/.well-known/` discovery document — every path
-returned 404. No `api.`/`developer.`/`docs.`/`status.` subdomain resolves.
+Everything profiled for ManyPets is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/manypets/](https://apis.io/providers/manypets/)** — or go straight to one of the APIs or properties below.
 
-ManyPets does operate an API: `many-group.com/partners/` lists **API Partner** as one
-of five partnership types ("Integrate with our API to create a seamless journey for
-customers to access our insurance"), alongside Affiliate, Widget Partner, Perk and
-Custom Solutions. Onboarding is a contact form — no spec, endpoint, sandbox, auth
-model or rate limit is published, so nothing can be captured without a partner
-agreement.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Path | Type | Method |
-|---|---|---|
-| `conformance/manypets-conformance.yml` | Conformance | searched |
-| `security/manypets-trust-center.yml` | TrustCenter | searched |
-| `security/manypets-vulnerability-disclosure.yml` | VulnerabilityDisclosure | searched |
-| `security/manypets-domain-security.yml` | DomainSecurity | probed |
-| `packages/manypets-packages.yml` | Packages | searched |
-| `lifecycle/manypets-lifecycle.yml` | Lifecycle | searched |
-| `well-known/manypets-well-known.yml` | — (negative probe record) | probed |
-| `llms/manypets-llms.txt` | LLMsTxt | generated |
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Manypets Domain Security](https://apis.io/security/manypets/manypets-domain-security/)
+- [Manypets Trust Center](https://apis.io/security/manypets/manypets-trust-center/)
+- [Manypets Vulnerability Disclosure](https://apis.io/security/manypets/manypets-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://manypets.com/uk/)
+- [Sign up](https://manypets.com/uk/quotes/uk-pio/)
+- [Support](https://manypets.com/uk/help/)
+- [Blog](https://manypets.com/uk/articles/)
+- [Compliance](https://trust.manypets.com/)
+- [Terms of service](https://manypets.com/uk/terms/)
+- [Privacy policy](https://manypets.com/uk/privacy/)
+- [GitHub](https://github.com/boughtbymany)
+
+## API Evangelist rating
+
+**Kin Score 21.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 50.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 26.3** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/manypets/](https://apis.io/providers/manypets/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ManyPets: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/manypets/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
